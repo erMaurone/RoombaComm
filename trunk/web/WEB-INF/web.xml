@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+    <display-name>Roomba Comm App</display-name>
+
+    <listener>
+        <listener-class>com.hackingroomba.roombacomm.web.RoombaContextListener</listener-class>
+    </listener>
+
+    <welcome-file-list>
+        <welcome-file>/jsp/indexTest.jsp</welcome-file>
+        <welcome-file>/roomba.html</welcome-file>
+        <welcome-file>/jsp/roombacomm.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>roombacomm</servlet-name>
+        <jsp-file>/WEB-INF/jsp/roombacomm.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CameraOnServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.CameraOnServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CameraOffServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.CameraOffServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PanTiltServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.PanTiltServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ImagesServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.ImagesServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>JWPlayerServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.JWPlayerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DirectionServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.DirectionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ControlsServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.ControlsServlet</servlet-class>
+    </servlet>
+
+    <!-- Note: All <servlet> elements MUST be grouped together and
+          placed IN FRONT of the <servlet-mapping> elements -->
+
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/sayhello</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CameraOnServlet</servlet-name>
+        <url-pattern>/cameraOn</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CameraOffServlet</servlet-name>
+        <url-pattern>/cameraOff</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PanTiltServlet</servlet-name>
+        <url-pattern>/panTilt</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ImagesServlet</servlet-name>
+        <url-pattern>/classes/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ImagesServlet</servlet-name>
+        <url-pattern>/show_image</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>JWPlayerServlet</servlet-name>
+        <url-pattern>/jwplayer/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DirectionServlet</servlet-name>
+        <url-pattern>/direction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ControlsServlet</servlet-name>
+        <url-pattern>/controls</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>roombacomm</servlet-name>
+        <url-pattern>/comm</url-pattern>
+    </servlet-mapping>
+
+</web-app>

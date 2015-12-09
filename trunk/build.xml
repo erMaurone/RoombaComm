@@ -1,0 +1,130 @@
+<project name="roombaNet" basedir="." default="main">
+
+	<property name="src.dir" value="src/" />
+	<property name="docs.dir" value="docs" />
+	<property name="lib.dir" value="lib" />
+	<property name="build.dir" value="build" />
+	<property name="classes.dir" value="${build.dir}/classes" />
+	<property name="javadocs.dir" value="${docs.dir}/api" />
+	<property name="jar.dir" value="${build.dir}/jar" />
+	<property name="dist.dir" value="dist" />
+    <property name="war.dir" value="${dist.dir}/war" />
+    <property name="web.dir" value="web" />
+	<property name="main-class" value="com.hackingroomba.roombacomm.RoombaCommGUI" />
+
+	<path id="classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar" />
+			<include name="rxtx/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<echo>cleaning ${build.dir}</echo>
+		<delete defaultexcludes="true" includeemptydirs="true">
+			  <fileset dir="${build.dir}"/>
+		</delete>
+        <echo>cleaning ${dist.dir}</echo>
+        <delete defaultexcludes="true" includeemptydirs="true">
+            <fileset dir="${dist.dir}"/>
+        </delete>
+	</target>
+
+	<target name="compile">
+		<echo>compiling project to ${classes.dir}...</echo>
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="classpath" />
+		<copy todir="${classes.dir}">
+			<fileset dir="${src.dir}" excludes="**/*.java"/>
+		</copy>
+        <copy todir="${classes.dir}">
+            <fileset dir="${web.dir}">
+                <include name="**/*.jsp"/>
+            </fileset>
+        </copy>
+		<echo>copying ${src.dir}/processing-jargs.examples into ${build.dir}...</echo>
+		<copy todir="${build.dir}">
+		     <fileset dir="src/processing-examples" excludes="**/*"/>
+		</copy>
+	</target>
+
+	<target name="jar" depends="compile">
+		<echo>building com.hackingroomba.roombacomm.jar...</echo>
+		<mkdir dir="${jar.dir}" />
+		<copy todir="${jar.dir}" file="${lib.dir}/rxtx/RXTXcomm.jar"/>
+		<copy todir="${jar.dir}" file="${lib.dir}/jargs.jar"/>
+        <copy todir="${jar.dir}" file="${lib.dir}/log4j-1.2.17.jar"/>
+		<jar destfile="${jar.dir}/roombacomm.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}" />
+				<attribute name="Class-Path" value="RXTXcomm.jar jargs.jar"/>
+			</manifest>
+		</jar>
+	</target>
+
+    <target name="dist" depends="jar">
+        <echo>building distribution directory for the project ${dist.dir}...</echo>
+        <mkdir dir="${dist.dir}" />
+        <echo>copying ready to use Jars to ${dist.dir}</echo>
+        <copy todir="${dist.dir}" file="${jar.dir}/roombacomm.jar"/>
+        <copy todir="${dist.dir}" file="${lib.dir}/rxtx/RXTXcomm.jar"/>
+        <copy todir="${dist.dir}" file="${lib.dir}/jargs.jar"/>
+        <copy todir="${dist.dir}" file="${lib.dir}/log4j-1.2.17.jar"/>
+        <echo>double click on ${dist.dir}/com.hackingroomba.roombacomm.jar to start a GUI</echo>
+    </target>
+
+    <target name="war" depends="jar">
+        <echo>building war directory for the project ${dist.dir}...</echo>
+        <mkdir dir="${war.dir}" />
+        <war destfile="${war.dir}/roomba.war" webxml="${web.dir}/WEB-INF/web.xml">
+            <fileset dir="${web.dir}">
+                <include name="**/*.*"/>
+            </fileset>
+            <fileset dir="${jar.dir}">
+                <include name="roombacomm.jar"/>
+            </fileset>
+            <lib dir="${jar.dir}">
+                <exclude name="roombacomm.jar"/>
+            </lib>
+            <classes dir="${classes.dir}"/>
+        </war>
+    </target>
+
+    <target name="run" depends="jar">
+		<echo>running ${jar.dir}/com.hackingroomba.roombacomm.jar</echo>
+        <java classname="${main-class}" fork="true" >
+            <classpath>
+                <path />
+                <pathelement location="${jar.dir}"/>
+                <pathelement location="${jar.dir}/roombacomm.jar"/>
+                <pathelement location="${jar.dir}/log4j-1.2.17.jar"/>
+            </classpath>
+        </java>
+
+	</target>
+
+	<target name="clean-build" depends="clean,jar" />
+ 
+	<target name="main" depends="clean,compile,jar,dist,war,run" />
+
+	<target name="javadoc" depends="compile">
+		<echo>buidling com.hackingroomba.roombacomm java docs in ${javadocs.dir}...</echo>
+		<echo> for this ant target to work you need to have a java SDK installed (not just a JRE) and in the PATH environment setting too.</echo>
+	    <javadoc
+	    	classpathref="classpath"
+	    	destdir="${javadocs.dir}"
+	    	access="public" 
+	    	author="true"
+	    	version="true"
+	    	use="true"
+	    	noindex="false" 
+            nonavbar="false" 
+            notree="false"
+	    	nodeprecated="false" 
+	    	nodeprecatedlist="false"
+	    	source="1.6"           
+	    	splitindex="true"
+	    	sourcepath="${src.dir}">
+	    </javadoc>
+	</target>
+</project>
