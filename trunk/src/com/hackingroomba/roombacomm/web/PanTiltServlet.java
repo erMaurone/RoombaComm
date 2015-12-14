@@ -27,26 +27,25 @@ public class PanTiltServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        logger.info("in post");
+
         ServletContext ctx = request.getServletContext();
         StringBuilder output = (StringBuilder) ctx.getAttribute("screen");
         String previousPan = (String) ctx.getAttribute("previousPan");
         String previousTilt = (String) ctx.getAttribute("previousTilt");
         String pan = request.getParameter("panSlider");
         String tilt = request.getParameter("tiltSlider");
-        String panTilt = request.getParameter("panTiltSubmit");
-        logger.debug("got the parameters: " +
-                "previousPan=" + previousPan +
-                "previousTilt=" + previousTilt +
-                "pan=" + pan +
-                "tilt=" +tilt);
+
+        logger.info("got the parameters: " +
+                ", previousPan=" + previousPan +
+                ", previousTilt=" + previousTilt +
+                ", pan=" + pan +
+                ", tilt=" +tilt);
 
         FileWriter servos = new FileWriter(SERVO_BLASTER);
 
-        if (panTilt == null || (previousPan.equals(pan) && previousTilt.equals(tilt)) )
+        if ((previousPan.equals(pan) && previousTilt.equals(tilt)) )
             return;
         logger.info("some value changed");
-        output.append(panTilt);
         if (!previousPan.equals(pan)) {
             logger.info("changing pan to " + pan + "%");
             servos.write(SERVO_0 + pan + "%" + '\n');
@@ -69,6 +68,7 @@ public class PanTiltServlet extends HttpServlet {
         request.setAttribute("output", output);
         request.setAttribute("pan", pan);
         request.setAttribute("tilt", tilt);
+        logger.info(output.toString());
         RequestDispatcher rd = request.getRequestDispatcher("/comm");
         rd.forward(request, response);
     }

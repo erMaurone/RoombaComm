@@ -1,7 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" name="Default" comment="" />
+    <list default="true" id="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/simple-slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/simple-slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ArduinoBot.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ArduinoBot.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ArduinoClient.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ArduinoClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/AudioLocalizerClient.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/AudioLocalizerClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/jargs/examples/gnu/AutoHelpParser.class" afterPath="$PROJECT_DIR$/build/classes/jargs/examples/gnu/AutoHelpParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/BumpTurn.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/BumpTurn.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/CameraOffServlet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/CameraOffServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/CameraOnServlet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/CameraOnServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/ControlsServlet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/ControlsServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/DirectionServlet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/DirectionServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Drive.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Drive.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/DriveRealTime.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/DriveRealTime.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/net/DumpMethods.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/net/DumpMethods.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/FrameProcessor$1.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/FrameProcessor$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/FrameProcessor$LineBoundary.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/FrameProcessor$LineBoundary.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/FrameProcessor.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/FrameProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/HelloServlet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/HelloServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/ImagesServlet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/ImagesServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/JImagePanel.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/JImagePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/JWPlayerServlet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/JWPlayerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ListSerialPorts.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ListSerialPorts.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/LogoA.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/LogoA.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Note.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Note.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/PanTiltServlet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/PanTiltServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Pid.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Pid.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RR_API.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RR_API.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RTTTLParser.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RTTTLParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RTTTLPlay.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RTTTLPlay.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoboRealmAPI.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoboRealmAPI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoboRealmTest.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoboRealmTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Roborama$MyShutdown.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Roborama$MyShutdown.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Roborama.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Roborama.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotConnection$ConnectionType.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotConnection$ConnectionType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotConnection$ReadTerminator.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotConnection$ReadTerminator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotConnection.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotType$robotTypes.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotType$robotTypes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotType.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RobotType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/RoombaApplet$1.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/RoombaApplet$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/RoombaApplet.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/RoombaApplet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaComm$1.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaComm$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaComm.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaComm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommCLI.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommCLI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$1.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$10.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$11.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$2.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$3.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$4.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$5.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$6.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$7.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$8.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$9.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommGUI$1.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommGUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommGUI.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommGUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$1.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$2.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$3.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$4.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$5.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$6.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$7.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$8.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$9.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommSerial.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommSerial.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommTCPClient.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommTCPClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/net/RoombaCommTCPServer.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/net/RoombaCommTCPServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommTest.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommTestOld.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaCommTestOld.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/RoombaContextListener.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/web/RoombaContextListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$1.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$2.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$3.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$4.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$5.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$6.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$7.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$8.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorderPanel.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/RoombaRecorderPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/servos/ServoController.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/servos/ServoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/SimpleTest.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/SimpleTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/net/SimpleTest.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/net/SimpleTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Spiral.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Spiral.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Spiro1.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Spiro1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Spiro2.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Spiro2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Spy.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Spy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/SpyAuto.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/SpyAuto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/SpySimple.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/SpySimple.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Test.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/net/TextHttpServer.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/net/TextHttpServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Tribble.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Tribble.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Waggle.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/Waggle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/XML.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/XML.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/watchVideo.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/watchVideo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java" afterPath="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java" afterPath="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java" afterPath="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/WEB-INF/jsp/roombacomm.jsp" afterPath="$PROJECT_DIR$/build/classes/WEB-INF/jsp/roombacomm.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="trunk.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420969717402" ignored="false" />
@@ -28,33 +133,29 @@
     <file path="$PROJECT_DIR$/src/com/scripts/build-processing-library.bat" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1419344340548" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/scripts/build-processing-library.sh" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1419344340548" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/com/packaging/BSquare-jar.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1419344085902" ignored="false" />
-    <file path="/*.regexp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1419346710158" ignored="false" />
+    <file path="/*.regexp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450034107808" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/scripts/build-jar.bat" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/scripts/build-processing-library.bat" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/scripts/build-jar.sh" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/scripts/build-processing-library.sh" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="/roomba.html" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1419360459426" ignored="false" />
-    <file path="/build.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420673871473" ignored="false" />
+    <file path="/build.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450011547446" ignored="false" />
     <file path="/RoombaApplet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1419362534205" ignored="false" />
     <file path="/roombacomm.html" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420136280674" ignored="false" />
     <file path="/ImagesServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420129969407" ignored="false" />
     <file path="/RoombaServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420140655155" ignored="false" />
-    <file path="/roombacomm.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420974502768" ignored="false" />
+    <file path="/roombacomm.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450051822634" ignored="false" />
     <file path="/DirectionServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1421001289250" ignored="false" />
     <file path="/roombaOut.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420214202150" ignored="false" />
     <file path="/ControlsServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420408652063" ignored="false" />
     <file path="/RoombaComm.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420410398108" ignored="false" />
     <file path="/RoombaContextListener.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420977119288" ignored="false" />
     <file path="/log4j.properties" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420801238511" ignored="false" />
-    <file path="$PROJECT_DIR$/build/classes/log4j.properties" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420800536474" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/processing-examples/roombaview/libraries/MyGUI/MyGUI_readme.txt" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/WEB-INF/jsp/roombaOut.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420675895139" ignored="false" />
-    <file path="$PROJECT_DIR$/build/classes/Makefile" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/packaging/processing-readme.txt" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/WEB-INF/jsp/indexTest.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/processing-examples/roombaview/roombaview.pde" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420675895139" ignored="false" />
-    <file path="$PROJECT_DIR$/build/classes/TODO.txt" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
-    <file path="$PROJECT_DIR$/build/classes/WEB-INF/jsp/roombacomm.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420760571509" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/packaging/RoombaCommTest.app/Contents/PkgInfo" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/packaging/RoombaCommTest.app/Contents/Info.plist" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/packaging/RoombaCommTest.app/Contents/MacOS/JavaApplicationStub" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
@@ -64,13 +165,13 @@
     <file path="$PROJECT_DIR$/build/classes/scripts/runit.sh" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="/CameraServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420803703062" ignored="false" />
     <file path="/ServoController.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420927286174" ignored="false" />
-    <file path="/PanTiltServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420976847373" ignored="false" />
+    <file path="/PanTiltServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450042510253" ignored="false" />
     <file path="/RoombaCommSerial.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1421003351871" ignored="false" />
     <file path="/Dummy.txt" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1449361423582" ignored="false" />
     <file path="$PROJECT_DIR$/../../AlgoCourse1/.idea/workspace.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1445498751633" ignored="false" />
     <file path="$PROJECT_DIR$/../../webModule/.idea/workspace.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1448743340078" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1448745391447" ignored="false" />
-    <file path="/CameraOffServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1449362079777" ignored="false" />
+    <file path="/CameraOffServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1449999108326" ignored="false" />
+    <file path="/CameraOnServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450002970102" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,28 +232,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="roombacomm.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="roombacomm.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="1056" selection-end="1056" vertical-scroll-proportion="-18.307692">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CameraOffServlet.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="95" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.57185185">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CameraOnServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+            <state line="92" column="51" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.64220184">
               <folding />
             </state>
           </provider>
@@ -170,34 +253,34 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="41.419353">
+            <state line="97" column="30" selection-start="3233" selection-end="3241" vertical-scroll-proportion="-2.689655">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexTest.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/indexTest.jsp">
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="83" column="65" selection-start="3343" selection-end="3343" vertical-scroll-proportion="-52.25926">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="roomba.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/roomba.html">
+      <file leaf-file-name="PanTiltServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="741" selection-end="741" vertical-scroll-proportion="-11.769231">
+            <state line="47" column="42" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/README.html">
+      <file leaf-file-name="CameraOnServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="19" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -206,7 +289,16 @@
       <file leaf-file-name="JWPlayerServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/JWPlayerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+            <state line="27" column="52" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CameraOffServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="24" selection-start="1817" selection-end="1826" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -230,30 +322,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/RoombaCommFrame.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/JWPlayerServlet.java" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraServlet.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraServletOn.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/servos/ServoController.java" />
-        <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/RoombaContextListener.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/DirectionServlet.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/RoombaComm.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/RoombaCommSerial.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp" />
+        <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="y" value="22" />
-    <option name="width" value="1395" />
-    <option name="height" value="855" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -349,119 +442,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="processing-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packaging" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gnu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,6 +483,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,7 +518,7 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -533,23 +528,23 @@
       <recent name="com.hackingroomba.roombacomm.web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/lib/rxtx" />
       <recent name="$PROJECT_DIR$/web/WEB-INF/jwplayer" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/jsp" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF/" />
-      <recent name="$PROJECT_DIR$/web/jwplayer" />
-      <recent name="$PROJECT_DIR$/web/" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/jsp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.hackingroomba" />
       <recent name="com" />
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/resources" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/js" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/css/" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/" />
+      <recent name="$PROJECT_DIR$/web/jwplayer" />
     </key>
   </component>
   <component name="RunManager">
@@ -700,36 +695,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="22" width="1395" height="855" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53682894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09206587" sideWeight="0.7365854" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09149856" sideWeight="0.69787765" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22328767" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30212235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962743" sideWeight="0.5369863" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39371258" sideWeight="0.7798913" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2300819" sideWeight="0.7365854" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22262248" sideWeight="0.69787765" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5380435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26341462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3464674" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -814,60 +809,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/RoombaContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="42" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/RoombaCommSerial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="23" selection-start="12037" selection-end="12037" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/rxtx/README.rxtx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="456" selection-end="456" vertical-scroll-proportion="0.71391076" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/RoombaApplet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/ImagesServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/ControlsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/ArduinoBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="49" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.794964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/roomba.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="36" selection-start="741" selection-end="741" vertical-scroll-proportion="-11.769231">
@@ -876,6 +817,48 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/README.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jwplayer/jwplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.528302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jargs/examples/gnu/AutoHelpParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/indexTest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.roomba_config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/simple-slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="83" selection-start="629" selection-end="629" vertical-scroll-proportion="0.61174244">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/simple-slider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -893,21 +876,21 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="41.419353">
+        <state line="97" column="30" selection-start="3233" selection-end="3241" vertical-scroll-proportion="-2.689655">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/JWPlayerServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/ImagesServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+        <state line="23" column="48" selection-start="753" selection-end="753" vertical-scroll-proportion="0.5768463">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/indexTest.jsp">
+    <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="83" column="65" selection-start="3343" selection-end="3343" vertical-scroll-proportion="-52.25926">
           <folding />
         </state>
       </provider>
@@ -919,16 +902,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1056" selection-end="1056" vertical-scroll-proportion="-18.307692">
+        <state line="49" column="24" selection-start="1817" selection-end="1826" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/JWPlayerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="95" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.57185185">
+        <state line="27" column="52" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="42" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="51" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.64220184">
           <folding />
         </state>
       </provider>

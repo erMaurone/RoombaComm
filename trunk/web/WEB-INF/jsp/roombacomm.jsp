@@ -10,10 +10,16 @@
     <title>RoombaComm control</title>
 </head>
 <header><h1> Roomba Robot </h1> </header>
+
 <body>
+<!-- Include Simple Slider JavaScript and CSS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="resources/simple-slider.js"></script>
+<link href="resources/simple-slider.css" rel="stylesheet" type="text/css" />
+
 
 <div id="video-jwplayer_wrapper" style="position: relative; display: block; width:95%; height: 540px;">
-    <object type="application/x-shockwave-flash" data="jwplayer/jwplayer.flash.swf" width="100%" height="100%" bgcolor="#000000"
+    <object type="application/x-shockwave-flash" data="jwplayer/jwplayer.flash.swf" width="90%" height="90%" bgcolor="#000000"
             id="video-jwplayer" name="video-jwplayer" tabindex="0">
         <param name="allowfullscreen" value="true">
         <param name="allowscriptaccess" value="always">
@@ -25,9 +31,6 @@
 </div>
 
 <script src="jwplayer/jwplayer.js"></script>
-
-
-
 <script type="text/javascript">
     jwplayer('video-jwplayer').setup({
         flashplayer:"jwplayer/jwplayer.flash.swf"
@@ -60,68 +63,85 @@
     });
 </script>
 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).on("click", "#cameraOn", function() {
+        $.get("/roomba/cameraOn", "cameraOn=cameraOn", function(responseText) {
+
+        });
+    });
+</script>
+
+<script>
+    $(document).on("click", "#cameraOff", function() {
+        $.get("/roomba/cameraOff", "cameraOff=cameraOff", function(responseText)
+        {
+
+        });
+    });
+</script>
+
+<script>
+    $(document).on("click", "#panTilt", function() {
+
+        var pan = $("#panSlider").val();
+        var tilt = $("#tiltSlider").val();
+        var response="test";
+
+        $.post("/roomba/panTilt", {panSlider: pan, tiltSlider: tilt}, function(responseText) {
+               response = responseText;
+        });
+        alert(response);
+        $("#outputArea").val(response);
+        $("#txtArea").val(response);
+    });
+</script>
+
 <table name="layout"  border="1" style="width:95%">
-    <tr>
-        <td><h3> Camera and tilt/pan servos </h3></td>
-        <td><h3> Roomba Robot Direction </h3></td>
-        <td><h3> Roomba Robot Controls </h3></td>
-    </tr>
+
     <tr>
         <td>
                 <table style="margin-top:5px; margin-left:5px;">
                     <tr>
                         <td>
-                            <form action="cameraOn" method="post" name="cameraOn" >
-                                <button type="submit" name="cameraOn" value="cameraOn" > CAMERA ON </button>
-                            </form>
+                            <button id="cameraOn" name="cameraOn" value="cameraOn" > CAMERA ON </button>
                         </td>
                         <td>
-                            <form action="cameraOff" method="post" name="cameraOff" >
-                                <button type="submit" name="cameraOff" value="cameraOff"> CAMERA OFF </button>
-                            </form>
+                            <button id="cameraOff" name="cameraOff" value="cameraOff"> CAMERA OFF </button>
                         </td>
                     </tr>
                 </table>
-            <form action="panTilt" method="post" name="panTilt">
                 <table style="margin-top:5px; margin-left:5px;">
                      <tr>
                         <td>
                             <label> PAN </label>
                         </td>
+                     </tr>
+                     <tr>
                         <td>
-                            <label> TILT </label>
+                            <input id="panSlider" type="text" data-slider="true" data-slider-range="3,98" data-slider-step="1" data-slider-highlight="true">
+
                         </td>
                      </tr>
                     <tr>
                         <td>
-                            <p class="note"> <span style="color:blue">${pan}</span>
-                                <input id="panSlider" name="panSlider" value="${pan}"
-                                       type="range" min="0" max="100" step=1 />
-                            </p>
-                        </td>
-                        <td>
-                            <p class="note"> <span style="color:blue">${tilt}</span>
-                                <input id="tiltSlider" name="tiltSlider" value="${tilt}"
-                                       type="range" min="0" max="100" step=1 />
-                            </p>
+                            <label> TILT </label>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                           <label for="panSlider"> 0% - 100% </label>
-                        </td>
-                        <td>
-                            <label for="tiltSlider"> 0% - 100% </label>
+                            <input id="tiltSlider" type="text" data-slider="true" data-slider-range="3,98" data-slider-step="1" data-slider-highlight="true">
                         </td>
                     </tr>
+
                     <tr>
                         <td colspan="2">
-                            <button type="submit" name="panTiltSubmit" value="panTiltSubmit" > SET SERVOS </button>
+                            <button id="panTilt" name="panTilt" value="panTilt" > SET SERVOS </button>
                         </td>
                     </tr>
                 </table>
-            </form>
         </td>
+
         <td>
             <form action="direction" method="post" name="direction" >
                 <table style="margin-top:5px; margin-left:5px;">
@@ -252,12 +272,11 @@
                 </table>
             </form>
         </td>
-    </tr>
-    <tr>
-        <td colspan="3">
-            <textarea readonly name="display" cols="110" rows="20" style="color:yellow;background-color:black;">
-                ${output}
-            </textarea>
+        <td>
+            <div id="outputArea"/>
+                <textarea id="txtArea" readonly name="display" cols="50" rows="20" style="color:yellow;background-color:black;">
+                </textarea>
+
         </td>
     </tr>
 

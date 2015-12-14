@@ -29,7 +29,6 @@ public class CameraOnServlet extends HttpServlet {
         ServletContext ctx = request.getServletContext();
         StringBuilder output = (StringBuilder) ctx.getAttribute("screen");
         String cameraOn = request.getParameter("cameraOn");
-        String cameraOff = request.getParameter("cameraOff");
 
 
         if (cameraOn != null) {
@@ -40,6 +39,25 @@ public class CameraOnServlet extends HttpServlet {
         request.setAttribute("output", output);
         RequestDispatcher rd = request.getRequestDispatcher("/comm");
         rd.forward(request, response);
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        logger.info("received request from " + request.getRequestURI());
+
+        ServletContext ctx = request.getServletContext();
+        StringBuilder output = (StringBuilder) ctx.getAttribute("screen");
+        String cameraOn = request.getParameter("cameraOn");
+
+        if (cameraOn != null) {
+            output.append(cameraOn + '\n');
+            startCapture();
+        }
+
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(output.toString());
     }
 
     private void startCapture() {

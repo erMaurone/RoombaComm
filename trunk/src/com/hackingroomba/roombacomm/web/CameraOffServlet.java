@@ -40,6 +40,26 @@ public class CameraOffServlet extends HttpServlet {
         rd.forward(request, response);     //what happen if you don't forward?  would it supress the refresh?
     }
 
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        logger.info("received request from " + request.getRequestURI());
+
+        ServletContext ctx = request.getServletContext();
+        StringBuilder output = (StringBuilder) ctx.getAttribute("screen");
+        String cameraOff = request.getParameter("cameraOff");
+
+        if (cameraOff != null) {
+            output.append(cameraOff + '\n');
+            killCapture();
+        }
+
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(output.toString());
+
+    }
+
     private void killCapture() {
         logger.info("stopping video capture");
         executeCommand(STOP_VIDEO_COMMAND);
