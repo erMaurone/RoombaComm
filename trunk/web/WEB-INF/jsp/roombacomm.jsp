@@ -66,17 +66,34 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).on("click", "#cameraOn", function() {
-        $.get("/roomba/cameraOn", "cameraOn=cameraOn", function(responseText) {
-
+        $.ajax({
+            asynch: false,
+            url: "/roomba/cameraOn",
+            type: 'GET',
+            data: 'cameraOn=cameraOn',
+            success: function(data){
+                $("#txtArea").val(data);    //only display when jws script ends
+            },
+            error: function(data) {
+                alert('woops!'+ data); //or whatever
+            }
         });
     });
 </script>
 
 <script>
     $(document).on("click", "#cameraOff", function() {
-        $.get("/roomba/cameraOff", "cameraOff=cameraOff", function(responseText)
-        {
-
+        $.ajax({
+            asynch: false,
+            url: "/roomba/cameraOff",
+            type: 'GET',
+            data: 'cameraOff=cameraOff',
+            success: function(data){
+                $("#txtArea").val(data);
+            },
+            error: function(data) {
+                alert('woops!'+ data); //or whatever
+            }
         });
     });
 </script>
@@ -88,12 +105,18 @@
         var tilt = $("#tiltSlider").val();
         var response="test";
 
-        $.post("/roomba/panTilt", {panSlider: pan, tiltSlider: tilt}, function(responseText) {
-               response = responseText;
+        $.ajax({
+            asynch: false,
+            url: "/roomba/panTilt",
+            type: 'POST',
+            data: {panSlider: pan, tiltSlider: tilt},
+            success: function(data){
+                $("#txtArea").val(data);
+            },
+            error: function(data) {
+                alert('woops!'+ data); //or whatever
+            }
         });
-        alert(response);
-        $("#outputArea").val(response);
-        $("#txtArea").val(response);
     });
 </script>
 

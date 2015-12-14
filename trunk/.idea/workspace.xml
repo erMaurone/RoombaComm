@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/simple-slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/simple-slider.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ArduinoBot.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ArduinoBot.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ArduinoClient.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/ArduinoClient.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/AudioLocalizerClient.class" afterPath="$PROJECT_DIR$/build/classes/com/hackingroomba/roombacomm/AudioLocalizerClient.class" />
@@ -118,7 +116,6 @@
     <file path="$PROJECT_DIR$/build/classes/scripts/makeit.bat" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/scripts/RoombaCommTest.bat" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/scripts/makeit.sh" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
-    <file path="$PROJECT_DIR$/build/classes/packaging/BSquare-jar.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/packaging/processing-export.txt" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/build/classes/packaging/Manifest.txt" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420670434304" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/scripts/build-jar.sh" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1419344340548" ignored="false" />
@@ -144,7 +141,7 @@
     <file path="/roombacomm.html" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420136280674" ignored="false" />
     <file path="/ImagesServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420129969407" ignored="false" />
     <file path="/RoombaServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420140655155" ignored="false" />
-    <file path="/roombacomm.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450051822634" ignored="false" />
+    <file path="/roombacomm.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450100169359" ignored="false" />
     <file path="/DirectionServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1421001289250" ignored="false" />
     <file path="/roombaOut.jsp" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420214202150" ignored="false" />
     <file path="/ControlsServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420408652063" ignored="false" />
@@ -167,10 +164,10 @@
     <file path="/ServoController.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1420927286174" ignored="false" />
     <file path="/PanTiltServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450042510253" ignored="false" />
     <file path="/RoombaCommSerial.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1421003351871" ignored="false" />
-    <file path="/Dummy.txt" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1449361423582" ignored="false" />
+    <file path="/Dummy.txt" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450052182397" ignored="false" />
     <file path="$PROJECT_DIR$/../../AlgoCourse1/.idea/workspace.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1445498751633" ignored="false" />
     <file path="$PROJECT_DIR$/../../webModule/.idea/workspace.xml" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1448743340078" ignored="false" />
-    <file path="/CameraOffServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1449999108326" ignored="false" />
+    <file path="/CameraOffServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450100322507" ignored="false" />
     <file path="/CameraOnServlet.java" changelist="481a29b3-ce7c-48c3-ba1b-b157a1f33f92" time="1450002970102" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +232,7 @@
       <file leaf-file-name="roombacomm.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="51" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.64220184">
+            <state line="74" column="79" selection-start="2539" selection-end="2539" vertical-scroll-proportion="2.8853211">
               <folding />
             </state>
           </provider>
@@ -271,7 +268,7 @@
       <file leaf-file-name="PanTiltServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="42" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
+            <state line="64" column="47" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -280,16 +277,7 @@
       <file leaf-file-name="CameraOnServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JWPlayerServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/JWPlayerServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="52" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
+            <state line="55" column="23" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -298,7 +286,7 @@
       <file leaf-file-name="CameraOffServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="24" selection-start="1817" selection-end="1826" vertical-scroll-proportion="0.0">
+            <state line="56" column="8" selection-start="1918" selection-end="1949" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -333,10 +321,10 @@
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/DirectionServlet.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/RoombaComm.java" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/RoombaCommSerial.java" />
-        <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp" />
       </list>
     </option>
@@ -692,6 +680,11 @@
       <created>1419341547333</created>
       <updated>1419341547333</updated>
     </task>
+    <task id="LOCAL-00001" summary="introduced ajax - no page refresh, plus some cosmetic improvements">
+      <created>1450052214349</created>
+      <updated>1450052214349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -719,7 +712,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22262248" sideWeight="0.69787765" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22262248" sideWeight="0.69787765" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -771,7 +764,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="introduced ajax - no page refresh, plus some cosmetic improvements" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -785,6 +778,7 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="introduced ajax - no page refresh, plus some cosmetic improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -895,20 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="24" selection-start="1817" selection-end="1826" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/JWPlayerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="52" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
@@ -918,14 +898,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/PanTiltServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="42" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
+        <state line="64" column="47" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOffServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="8" selection-start="1918" selection-end="1949" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hackingroomba/roombacomm/web/CameraOnServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="23" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/roombacomm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="51" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.64220184">
+        <state line="74" column="79" selection-start="2539" selection-end="2539" vertical-scroll-proportion="2.8853211">
           <folding />
         </state>
       </provider>

@@ -2,7 +2,6 @@ package com.hackingroomba.roombacomm.web;
 
 import org.apache.log4j.Logger;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -65,11 +64,8 @@ public class PanTiltServlet extends HttpServlet {
         ctx.setAttribute("previousPan", pan);
         ctx.setAttribute("previousTilt", tilt);
 
-        request.setAttribute("output", output);
-        request.setAttribute("pan", pan);
-        request.setAttribute("tilt", tilt);
-        logger.info(output.toString());
-        RequestDispatcher rd = request.getRequestDispatcher("/comm");
-        rd.forward(request, response);
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(output.toString());
     }
 }

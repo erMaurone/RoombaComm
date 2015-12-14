@@ -37,7 +37,7 @@ public class CameraOffServlet extends HttpServlet {
 
         request.setAttribute("output", output);
         RequestDispatcher rd = request.getRequestDispatcher("/comm");
-        rd.forward(request, response);     //what happen if you don't forward?  would it supress the refresh?
+        rd.forward(request, response);
     }
 
     @Override
@@ -54,6 +54,7 @@ public class CameraOffServlet extends HttpServlet {
             killCapture();
         }
 
+        logger.info(output.toString());
         response.setContentType("text/plain");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write(output.toString());

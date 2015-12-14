@@ -55,6 +55,7 @@ public class CameraOnServlet extends HttpServlet {
             startCapture();
         }
 
+        logger.info(output.toString());
         response.setContentType("text/plain");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write(output.toString());
