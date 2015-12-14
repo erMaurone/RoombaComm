@@ -9,7 +9,6 @@
 <head>
     <title>RoombaComm control</title>
 </head>
-<header><h1> Roomba Robot </h1> </header>
 
 <body>
 <!-- Include Simple Slider JavaScript and CSS -->
@@ -297,7 +296,7 @@
         </td>
         <td>
             <div id="outputArea"/>
-                <textarea id="txtArea" readonly name="display" cols="50" rows="20" style="color:yellow;background-color:black;">
+                <textarea id="txtArea" readonly name="display" cols="50" rows="16" style="color:yellow;background-color:black;">
                 </textarea>
 
         </td>
