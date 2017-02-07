@@ -1449,7 +1449,7 @@ spinright = -127 83
 	 */
 	protected void writeConfigFile(String port, String protocol, char waitForDSR) {
 		try {
-			FileWriter f = new FileWriter(".roomba_config", false);
+			FileWriter f = new FileWriter("/Users/mauro/workspace/roombaComm/trunk/src/.roomba_config", false);
 	    	BufferedWriter w = new BufferedWriter(f); // create file
 	    	if (port != null){
 	    		w.write(port);
@@ -1474,7 +1474,7 @@ spinright = -127 83
 
 	protected void readConfigFile() {
 		try {
-			FileReader f = new FileReader(".roomba_config");
+			FileReader f = new FileReader("/Users/mauro/workspace/roombaComm/trunk/src/.roomba_config");
 			BufferedReader r = new BufferedReader(f);
 			portname = r.readLine();
 			setProtocol(r.readLine());
