@@ -27,13 +27,11 @@ public class DirectionServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        logger.info("Received direction request");
+
         ServletContext ctx = request.getServletContext();
         StringBuilder output = (StringBuilder) ctx.getAttribute("screen");
-        RoombaComm roomba = (RoombaComm) ctx.getAttribute("roomba");
-        if(roomba.isConnected()) output.append("ROOMBA STATUS = connected" + '\n');
-        else output.append("ROOMBA STATUS = not connected"+ '\n');
-
-        output.append("ROOMBA ports = " + roomba.listPorts());
+        RoombaComm roombacomm = (RoombaComm) ctx.getAttribute("roomba");
 
         String turnLeft = request.getParameter("turnLeft");
         String forward  = request.getParameter("forward");
@@ -44,22 +42,60 @@ public class DirectionServlet extends HttpServlet {
         String backward = request.getParameter("backward");
         String speed = request.getParameter("speedSlider");
 
-        output.append("DIRECTION COMMAND, received instruction ");
-        if (turnLeft != null) output.append(turnLeft + '\n');
-        if (turnRight != null) output.append(turnRight + '\n');
-        if (forward != null) output.append(forward + '\n');
-        if (spinLeft != null) output.append(spinLeft + '\n');
-        if (spinRight != null) output.append(spinRight + '\n');
-        if (backward != null) output.append(backward + '\n');
+        initializeRoomba(roombacomm);
+
+        output.append("DIRECTION COMMAND; fwd=" + forward + ", stop=" + stop);
+        logger.info("DIRECTION COMMAND; forward = " + forward + ", stop = " + stop);
+
+        if (turnLeft != null) {
+            output.append(turnLeft + '\n');
+            roombacomm.turnLeft();
+        }
+        if (turnRight != null) {
+            output.append(turnRight + '\n');
+            roombacomm.turnRight();
+        }
+        if (forward != null) {
+            output.append(forward + '\n');
+            roombacomm.goForward();
+        }
+        if (spinLeft != null) {
+            output.append(spinLeft + '\n');
+            roombacomm.spinLeft();
+        }
+        if (spinRight != null) {
+            output.append(spinRight + '\n');
+            roombacomm.spinRight();
+        }
+        if (backward != null) {
+            output.append(backward + '\n');
+            roombacomm.goBackward();
+        }
         if (stop != null) {
             output.append(stop + '\n');
             speed = "0";
         }
-        output.append(", speed " + speed + '\n');
 
-        request.setAttribute("output", output);
-        request.setAttribute("speed", speed);
-        RequestDispatcher rd = request.getRequestDispatcher("/comm");
-        rd.forward(request, response);
+        roombacomm.pause(1000);
+        roombacomm.stop();
+        output.append(", speed=" + speed + '\n');
+
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(output.toString());
+
     }
+
+    private void initializeRoomba(RoombaComm roombacomm) {
+        roombacomm.startup();
+        roombacomm.control();
+        logger.info("Checking for Roomba... ");
+        if( roombacomm.updateSensors() )
+            logger.info("Roomba found!");
+        else {
+            logger.info("No Roomba. :(  Is it turned on?");
+            //TODO try to connect?
+        }
+    }
+
 }

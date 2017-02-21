@@ -37,20 +37,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
     <orderEntry type="module-library">
       <library name="bluecove-2.1.0.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/bluecove/bluecove-2.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="RXTXcomm.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/rxtx/RXTXcomm.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -81,16 +72,6 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Library/Java/Extensions" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Library/Java/Extensions" recursive="false" />
       </library>
     </orderEntry>
   </component>

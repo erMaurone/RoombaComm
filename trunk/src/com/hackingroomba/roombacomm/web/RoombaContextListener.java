@@ -28,9 +28,11 @@ public class RoombaContextListener implements ServletContextListener {
     private static final String SERVO_BLASTER ="/dev/servoblaster";
     private static final String SERVO_0="0=";
     private static final String SERVO_1="1=";
+    private static final String ROOMBA_PORT = "/dev/ttyUSB0";
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
+        //TODO - MV - read /dev/servoblaster to get current servos angle and update the sliders accordingly
         ServletContext ctx = servletContextEvent.getServletContext();
         RoombaComm roomba = new RoombaCommSerial();
         ctx.setAttribute(ROOMBA,roomba);
@@ -39,15 +41,19 @@ public class RoombaContextListener implements ServletContextListener {
         StringBuilder screen = new StringBuilder();
         resetServos();
         ctx.setAttribute(SCREEN, screen);
+        connectRoomba(roomba);
+
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
         ServletContext ctx = servletContextEvent.getServletContext();
         RoombaComm roomba = (RoombaCommSerial)ctx.getAttribute(ROOMBA);
+        logger.info("Disconnecting roomba");
         roomba.disconnect();
         resetServos();
 
+        /*
         Runtime r = Runtime.getRuntime();
         try {
             Process process = r.exec(STOP_VIDEO_COMMAND);
@@ -56,6 +62,7 @@ public class RoombaContextListener implements ServletContextListener {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        */
     }
 
     private void resetServos() {
@@ -66,5 +73,78 @@ public class RoombaContextListener implements ServletContextListener {
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
+    }
+
+    private void connectRoomba(RoombaComm roomba) {
+        if( ! roomba.connect( ROOMBA_PORT ) ) {
+            logger.info("Couldn't connect to "+ ROOMBA_PORT);
+        }
+        logger.info("Roomba startup on port "+ ROOMBA_PORT);
+        sing(roomba);
+
+    }
+
+    private void sing(RoombaComm roombacomm) {
+        logger.info("Playing some notes");
+        roombacomm.playNote( 72, 10 );  // C
+        roombacomm.pause( 200 );
+        roombacomm.playNote( 79, 10 );  // G
+        roombacomm.pause( 200 );
+        roombacomm.playNote( 76, 10 );  // E
+        roombacomm.pause( 200 );
+    }
+
+    private void spinRun(RoombaComm roombacomm) {
+
+
+        roombacomm.startup();
+        roombacomm.control();
+        roombacomm.pause(30);
+
+        logger.info("Checking for Roomba... ");
+        if( roombacomm.updateSensors() )
+            logger.info("Roomba found!");
+        else
+            logger.info("No Roomba. :(  Is it turned on?");
+
+        //com.hackingroomba.roombacomm.updateSensors();
+
+        logger.info("Playing some notes");
+        roombacomm.playNote( 72, 10 );  // C
+        roombacomm.pause( 200 );
+        roombacomm.playNote( 79, 10 );  // G
+        roombacomm.pause( 200 );
+        roombacomm.playNote( 76, 10 );  // E
+        roombacomm.pause( 200 );
+
+        logger.info("Spinning left, then right");
+        roombacomm.spinLeft();
+        roombacomm.pause(1000);
+        roombacomm.spinRight();
+        roombacomm.pause(1000);
+        roombacomm.stop();
+
+        logger.info("Going forward, then backward");
+        roombacomm.goForward();
+        roombacomm.pause(1000);
+        roombacomm.goBackward();
+        roombacomm.pause(1000);
+        roombacomm.stop();
+
+
+        logger.info("Moving via send()");
+        byte cmd[] = {(byte)RoombaComm.DRIVE,
+                (byte)0x00,(byte)0xfa, (byte)0x00,(byte)0x00};
+        roombacomm.send( cmd ) ;
+        roombacomm.pause(1000);
+        roombacomm.stop();
+        cmd[1] = (byte)0xff;
+        cmd[2] = (byte)0x05;
+        roombacomm.send( cmd ) ;
+        roombacomm.pause(1000);
+        roombacomm.stop();
+
+        logger.info("Done");
+
     }
 }

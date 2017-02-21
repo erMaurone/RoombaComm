@@ -1441,54 +1441,8 @@ spinright = -127 83
 		}
 		this.protocol = protocol;
 		logmsg("Protocol: " + protocol +" , rate: "+rate);
-		writeConfigFile(portname, protocol, waitForDSR?'Y':'N');
 	}
 
-	/**
-	 * Write a config file with current settings
-	 */
-	protected void writeConfigFile(String port, String protocol, char waitForDSR) {
-		try {
-			FileWriter f = new FileWriter("/Users/mauro/workspace/roombaComm/trunk/src/.roomba_config", false);
-	    	BufferedWriter w = new BufferedWriter(f); // create file
-	    	if (port != null){
-	    		w.write(port);
-	    	}else{
-	    		w.newLine();
-	    	}
-	    	w.newLine();
-	    	if (protocol != null){
-	    		w.write(protocol);
-	    	}else{
-	    		w.newLine();
-	    	}
-	    	w.newLine();
-	    	w.write(waitForDSR);
-	    	w.newLine();
-	    	w.close();
-	    	f.close();
-		} catch (IOException e) {
-			logmsg("unable to write .roomba_config " + e);
-		}
-	}
-
-	protected void readConfigFile() {
-		try {
-			FileReader f = new FileReader("/Users/mauro/workspace/roombaComm/trunk/src/.roomba_config");
-			BufferedReader r = new BufferedReader(f);
-			portname = r.readLine();
-			setProtocol(r.readLine());
-			if (getProtocol().equals("SCI")) {
-				rate = 57600;
-			}else if (getProtocol().equals("OI")) {
-				rate = 115200;
-			}
-			waitForDSR = r.readLine().equals("Y")?true:false;
-			logmsg("read config port: " + serialPort + " protocol: " + getProtocol() + " waitDSR: " + waitForDSR);    		
-		} catch (IOException e) {
-			logmsg("unable to read .roomba_config " + e);
-		}
-	}
 
 	public void setLEDs(RoombaComm roombacomm) {
 		if( !roombacomm.connected() ){

@@ -1,4 +1,7 @@
 #!/bin/sh
 
-
-java -Djava.library.path=rxtxlib -classpath .:rxtxlib/RXTXcomm.jar com.hackingroomba.roombacomm.RoombaCommTest
+cd ..
+pwd
+/usr/bin/java -version
+/usr/bin/java -Djava.library.path=/Users/mauro/Library/Java/Extensions  com.hackingroomba.roombacomm.RoombaCommTest
+#-classpath .:/Users/mauro/workspace/roombaComm/trunk/build/jar/*

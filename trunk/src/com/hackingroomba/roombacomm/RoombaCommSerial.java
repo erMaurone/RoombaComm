@@ -104,17 +104,17 @@ public class RoombaCommSerial extends RoombaComm implements SerialPortEventListe
     public RoombaCommSerial() {
         super();
         makePorts();
-        readConfigFile();
+        //readConfigFile();
     }
     public RoombaCommSerial(boolean autoupdate) {
         super(autoupdate);
         makePorts();
-        readConfigFile();
+        //readConfigFile();
     }
     public RoombaCommSerial(boolean autoupdate, int updateTime) {
         super(autoupdate, updateTime);
         makePorts();
-        readConfigFile();
+        //readConfigFile();
     }
 
     void makePorts() {
@@ -130,7 +130,6 @@ public class RoombaCommSerial extends RoombaComm implements SerialPortEventListe
     public boolean connect(String portid) {
         logmsg("connecting to port '"+portid+"'");
         portname = portid;
-		writeConfigFile(portname, getProtocol(), waitForDSR?'Y':'N');
 
         if( isPortInUse( portid ) ) {
             logmsg("port is in use");
@@ -168,7 +167,7 @@ public class RoombaCommSerial extends RoombaComm implements SerialPortEventListe
      */
     public void disconnect() {
         connected = false;
-
+        System.out.println("");
         // log in the global ports hash if the port is in use now or not
         if (ports != null && portname != null ){
         	ports.put( portname, new Boolean( connected ) );
@@ -383,7 +382,6 @@ public class RoombaCommSerial extends RoombaComm implements SerialPortEventListe
 
 	public void setWaitForDSR(boolean waitForDSR) {
 		this.waitForDSR = waitForDSR;
-		writeConfigFile(portname, getProtocol(), waitForDSR?'Y':'N');
 	}
 
 	public String getPortname() {
@@ -393,7 +391,6 @@ public class RoombaCommSerial extends RoombaComm implements SerialPortEventListe
 	public void setPortname(String p) {
 		portname = p;
 		logmsg("Port: " + portname);
-		writeConfigFile(portname, getProtocol(), waitForDSR?'Y':'N');
 
 	}
 

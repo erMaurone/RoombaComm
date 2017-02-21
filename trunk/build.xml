@@ -51,7 +51,7 @@
 	<target name="jar" depends="compile">
 		<echo>building com.hackingroomba.roombacomm.jar...</echo>
 		<mkdir dir="${jar.dir}" />
-		<copy todir="${jar.dir}" file="${lib.dir}/rxtx/RXTXcomm.jar"/>
+		<copy todir="${jar.dir}" file="lib/rxtx/RXTXcomm.jar"/>
 		<copy todir="${jar.dir}" file="${lib.dir}/jargs.jar"/>
         <copy todir="${jar.dir}" file="${lib.dir}/log4j-1.2.17.jar"/>
 		<jar destfile="${jar.dir}/roombacomm.jar" basedir="${classes.dir}">
@@ -67,7 +67,7 @@
         <mkdir dir="${dist.dir}" />
         <echo>copying ready to use Jars to ${dist.dir}</echo>
         <copy todir="${dist.dir}" file="${jar.dir}/roombacomm.jar"/>
-        <copy todir="${dist.dir}" file="${lib.dir}/rxtx/RXTXcomm.jar"/>
+        <copy todir="${dist.dir}" file="lib/rxtx/RXTXcomm.jar"/>
         <copy todir="${dist.dir}" file="${lib.dir}/jargs.jar"/>
         <copy todir="${dist.dir}" file="${lib.dir}/log4j-1.2.17.jar"/>
         <echo>double click on ${dist.dir}/com.hackingroomba.roombacomm.jar to start a GUI</echo>
