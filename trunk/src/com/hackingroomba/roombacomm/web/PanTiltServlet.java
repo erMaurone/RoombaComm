@@ -49,14 +49,14 @@ public class PanTiltServlet extends HttpServlet {
             logger.info("changing pan to " + pan + "%");
             servos.write(SERVO_0 + pan + "%" + '\n');
             servos.flush();
-            output.append(", set pan = " + pan + "%");
+            output.append("pan = " + pan + "% ");
         }
 
         if (!previousTilt.equals(tilt)) {
             logger.info("changing tilt to " + tilt + "%");
             servos.write(SERVO_1 + tilt + "%" + '\n');
             servos.flush();
-            output.append(", set tilt = " + tilt + "%" );
+            output.append("tilt = " + tilt + "%" );
         }
         servos.close();
         output.append('\n');

@@ -27,13 +27,13 @@
     </servlet>
 
     <servlet>
-        <servlet-name>CameraOnServlet</servlet-name>
-        <servlet-class>com.hackingroomba.roombacomm.web.CameraOnServlet</servlet-class>
+        <servlet-name>CameraServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.CameraServlet</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>CameraOffServlet</servlet-name>
-        <servlet-class>com.hackingroomba.roombacomm.web.CameraOffServlet</servlet-class>
+        <servlet-name>MotionServlet</servlet-name>
+        <servlet-class>com.hackingroomba.roombacomm.web.MotionServlet</servlet-class>
     </servlet>
 
     <servlet>
@@ -44,11 +44,6 @@
     <servlet>
         <servlet-name>ImagesServlet</servlet-name>
         <servlet-class>com.hackingroomba.roombacomm.web.ImagesServlet</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>JWPlayerServlet</servlet-name>
-        <servlet-class>com.hackingroomba.roombacomm.web.JWPlayerServlet</servlet-class>
     </servlet>
 
     <servlet>
@@ -70,13 +65,13 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>CameraOnServlet</servlet-name>
-        <url-pattern>/cameraOn</url-pattern>
+        <servlet-name>CameraServlet</servlet-name>
+        <url-pattern>/camera</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>CameraOffServlet</servlet-name>
-        <url-pattern>/cameraOff</url-pattern>
+        <servlet-name>MotionServlet</servlet-name>
+        <url-pattern>/motion</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -92,11 +87,6 @@
     <servlet-mapping>
         <servlet-name>ImagesServlet</servlet-name>
         <url-pattern>/show_image</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>JWPlayerServlet</servlet-name>
-        <url-pattern>/jwplayer/*</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

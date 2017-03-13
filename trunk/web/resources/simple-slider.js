@@ -19,7 +19,7 @@ var __slice = [].slice,
       this.input = input;
       this.defaultOptions = {
         animate: true,
-        snapMid: false,
+        snapMid: true,
         classPrefix: null,
         classSuffix: null,
         theme: null,
